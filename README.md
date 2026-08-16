@@ -11,6 +11,7 @@ Double-click `index.html` to open it in your browser. No installation or build s
 - `index.html` — website content and structure
 - `styles.css` — design and mobile responsiveness
 - `script.js` — mobile menu, animations, and current year
+- `logo.png` — TECHNOVA brand logo used in the header, hero, and footer
 
 ## Contact links
 
