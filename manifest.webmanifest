@@ -1,0 +1,19 @@
+{
+  "name": "TECHNOVA — Digital Solutions",
+  "short_name": "TECHNOVA",
+  "description": "Software, apps, websites, AI, and automation services by TECHNOVA.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#060712",
+  "theme_color": "#060712",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "1280x1280",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
