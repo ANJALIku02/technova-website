@@ -1,6 +1,6 @@
 # TECHNOVA Website
 
-A responsive, one-page agency/freelancer website for TECHNOVA.
+A responsive, installable agency/freelancer web app for TECHNOVA.
 
 ## Open locally
 
@@ -12,6 +12,12 @@ Double-click `index.html` to open it in your browser. No installation or build s
 - `styles.css` — design and mobile responsiveness
 - `script.js` — mobile menu, animations, and current year
 - `logo.png` — TECHNOVA brand logo used in the header, hero, and footer
+- `manifest.webmanifest` — app name, colors, icon, and install settings
+- `service-worker.js` — offline support and app caching
+
+## Install on a phone
+
+After publishing on GitHub Pages, open the live website in Chrome. Use the browser menu and tap **Add to Home screen** or **Install app**. The app will open in its own window from the phone home screen.
 
 ## Contact links
 
