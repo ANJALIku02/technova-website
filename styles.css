@@ -35,7 +35,7 @@ button { font: inherit; }
 .nav { height: 82px; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: flex; align-items: center; gap: 11px; font-family: "Space Grotesk"; font-size: 20px; font-weight: 700; letter-spacing: .04em; }
 .brand > span:last-child > span { color: var(--blue); }
-.brand-mark { display: grid; width: 35px; height: 35px; place-items: center; border: 1px solid rgba(32,183,255,.5); border-radius: 9px; background: linear-gradient(135deg, rgba(32,183,255,.17), rgba(141,92,255,.2)); color: white; box-shadow: inset 0 0 18px rgba(32,183,255,.13), 0 0 22px rgba(32,183,255,.08); }
+.brand-logo { display: block; width: 42px; height: 42px; object-fit: cover; border: 1px solid rgba(32,183,255,.45); border-radius: 50%; box-shadow: 0 0 20px rgba(32,183,255,.16); }
 .nav-links { display: flex; align-items: center; gap: 34px; font-size: 14px; font-weight: 500; }
 .nav-links > a:not(.button) { color: var(--muted); transition: color .2s; }
 .nav-links > a:not(.button):hover { color: var(--text); }
@@ -61,7 +61,7 @@ button { font: inherit; }
 .service-strip i { width: 3px; height: 3px; border-radius: 50%; background: var(--purple); }
 .hero-visual { position: relative; min-height: 500px; display: grid; place-items: center; }
 .visual-core { position: relative; z-index: 3; display: grid; width: 185px; height: 185px; place-items: center; border: 1px solid rgba(255,255,255,.15); border-radius: 42px; transform: rotate(45deg); background: linear-gradient(145deg, rgba(19,26,54,.95), rgba(9,11,28,.9)); box-shadow: inset 0 0 55px rgba(86,69,210,.16), 0 0 80px rgba(32,183,255,.13); }
-.core-label { transform: rotate(-45deg); font-family: "Space Grotesk"; font-size: 78px; font-weight: 700; text-shadow: -8px 4px 25px rgba(32,183,255,.45), 8px -4px 25px rgba(141,92,255,.45); }
+.hero-logo { width: 155px; height: 155px; transform: rotate(-45deg); object-fit: cover; border-radius: 34px; }
 .core-ring { position: absolute; inset: 14px; border: 1px solid rgba(32,183,255,.18); border-radius: 32px; }
 .orbit { position: absolute; border: 1px solid rgba(115,129,189,.2); border-radius: 50%; }
 .orbit-one { width: 360px; height: 360px; animation: spin 20s linear infinite; }
@@ -107,7 +107,7 @@ button { font: inherit; }
 .footer { border-top: 1px solid var(--line); }
 .footer-inner { min-height: 105px; display: flex; align-items: center; justify-content: space-between; gap: 25px; color: #747b91; font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
 .footer .brand { color: white; font-size: 15px; }
-.footer .brand-mark { width: 28px; height: 28px; border-radius: 7px; }
+.footer .brand-logo { width: 32px; height: 32px; }
 
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .75s ease, transform .75s ease; }
 .reveal.visible { opacity: 1; transform: none; }
