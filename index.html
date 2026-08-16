@@ -5,7 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="TECHNOVA builds professional software, apps, websites, AI solutions, and business automations.">
   <meta name="theme-color" content="#060712">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="TECHNOVA">
   <title>TECHNOVA — Make Your Next Move Digital</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -29,8 +35,11 @@
 
       <div class="nav-links" id="nav-links">
         <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#solutions">Solutions</a>
         <a href="#why-us">Why us</a>
         <a href="#contact">Contact</a>
+        <button class="install-button" id="install-app" type="button" hidden>Install App</button>
         <a class="button button-small" href="https://t.me/technovadigital" target="_blank" rel="noopener noreferrer">Let's talk</a>
       </div>
     </nav>
@@ -108,6 +117,40 @@
       </div>
     </section>
 
+    <section class="section about container" id="about">
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="eyebrow"><span></span> About TECHNOVA</p>
+          <h2>Ideas deserve more than<br><span class="gradient-text">just good code.</span></h2>
+        </div>
+        <div class="about-content reveal">
+          <p>TECHNOVA helps startups, freelancers, local businesses, and growing teams turn ideas into useful digital products. We combine strategy, design, development, AI, and automation in one practical workflow.</p>
+          <p>Whether you need your first website, a custom internal tool, a mobile-ready web app, or a smarter way to handle repetitive work—we build around your real goal.</p>
+          <div class="promise-grid">
+            <div><strong>Responsive</strong><span>Every screen size</span></div>
+            <div><strong>Scalable</strong><span>Ready for growth</span></div>
+            <div><strong>Secure</strong><span>Modern practices</span></div>
+            <div><strong>Supported</strong><span>After launch too</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="process">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow"><span></span> How we work</p><h2>A clear path from<br><span class="gradient-text">idea to launch.</span></h2></div>
+          <p>No complicated process. Each stage has a clear purpose, so you always know what is being built and what happens next.</p>
+        </div>
+        <div class="process-grid">
+          <article class="process-card reveal"><span>01</span><h3>Discover</h3><p>We understand your idea, users, business goal, priorities, and budget.</p></article>
+          <article class="process-card reveal"><span>02</span><h3>Plan</h3><p>We define the features, user journey, visual direction, and delivery roadmap.</p></article>
+          <article class="process-card reveal"><span>03</span><h3>Build</h3><p>We design and develop the product with regular progress updates.</p></article>
+          <article class="process-card reveal"><span>04</span><h3>Launch</h3><p>We test, publish, connect your domain, and help you go live confidently.</p></article>
+        </div>
+      </div>
+    </section>
+
     <section class="section why-us" id="why-us">
       <div class="container why-grid">
         <div class="why-copy reveal">
@@ -130,6 +173,58 @@
             <div><h3>Built for your growth</h3><p>Flexible solutions designed to evolve as your users and business grow.</p></div>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="section solutions container" id="solutions">
+      <div class="section-heading reveal">
+        <div><p class="eyebrow"><span></span> Solutions for real work</p><h2>What can we build<br><span class="gradient-text">for you?</span></h2></div>
+        <p>Choose a starting point or bring a completely new idea. Every solution is customized for your brand and workflow.</p>
+      </div>
+      <div class="solution-grid">
+        <article class="solution-card reveal"><span>🌐</span><h3>Business Website</h3><p>Professional company profile, service pages, lead forms, WhatsApp or Telegram contact, SEO basics, and analytics.</p><ul><li>Landing pages</li><li>Agency portfolios</li><li>Local business sites</li></ul></article>
+        <article class="solution-card reveal"><span>🛒</span><h3>Online Store</h3><p>Product catalogue, shopping experience, payment integration, order flow, and customer communication.</p><ul><li>Product management</li><li>Secure checkout</li><li>Order notifications</li></ul></article>
+        <article class="solution-card reveal"><span>📱</span><h3>Web & Mobile App</h3><p>Installable apps, dashboards, user accounts, bookings, subscriptions, and custom digital experiences.</p><ul><li>Progressive web apps</li><li>Admin dashboards</li><li>API integrations</li></ul></article>
+        <article class="solution-card reveal"><span>🤖</span><h3>AI Assistant</h3><p>AI-powered support, knowledge search, content workflows, data summaries, and useful internal assistants.</p><ul><li>Website chatbots</li><li>Document Q&A</li><li>Smart recommendations</li></ul></article>
+        <article class="solution-card reveal"><span>⚙️</span><h3>Business Automation</h3><p>Connect forms, spreadsheets, emails, CRMs, and notifications to remove repetitive manual work.</p><ul><li>Lead automation</li><li>Reports and alerts</li><li>Workflow integration</li></ul></article>
+        <article class="solution-card reveal"><span>🧩</span><h3>Custom Software</h3><p>A tailored solution for the process that generic software cannot handle efficiently.</p><ul><li>Management systems</li><li>Client portals</li><li>Internal tools</li></ul></article>
+      </div>
+    </section>
+
+    <section class="section showcase-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow"><span></span> Project possibilities</p><h2>Digital products made<br><span class="gradient-text">for every industry.</span></h2></div>
+          <p>These are examples of solutions we can tailor to your exact requirements, brand, and customers.</p>
+        </div>
+        <div class="showcase-grid">
+          <article class="showcase-card reveal"><small>EDUCATION</small><h3>Learning & Course Platform</h3><p>Courses, student accounts, progress tracking, tests, certificates, and announcements.</p></article>
+          <article class="showcase-card reveal"><small>HEALTH & WELLNESS</small><h3>Appointment System</h3><p>Service listing, time-slot booking, reminders, client records, and admin control.</p></article>
+          <article class="showcase-card reveal"><small>RETAIL</small><h3>Sales & Inventory Dashboard</h3><p>Products, stock levels, sales reports, low-stock alerts, and business insights.</p></article>
+          <article class="showcase-card reveal"><small>PROFESSIONAL SERVICES</small><h3>Lead & Client Portal</h3><p>Enquiries, proposals, documents, project status, invoices, and client communication.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stack container">
+      <div class="stack-copy reveal">
+        <p class="eyebrow"><span></span> Modern technology</p>
+        <h2>The right tools for<br><span class="gradient-text">the right product.</span></h2>
+        <p>We select technology based on speed, reliability, budget, and future growth—not trends alone.</p>
+      </div>
+      <div class="stack-list reveal" aria-label="Technologies and capabilities">
+        <span>HTML & CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>APIs</span><span>Databases</span><span>Cloud</span><span>AI Integration</span><span>Automation</span><span>GitHub</span><span>Responsive UI</span><span>SEO</span>
+      </div>
+    </section>
+
+    <section class="section faq container" id="faq">
+      <div class="faq-heading reveal"><p class="eyebrow"><span></span> Common questions</p><h2>Before we<br><span class="gradient-text">get started.</span></h2></div>
+      <div class="faq-list">
+        <details class="reveal"><summary>How much will my project cost?<span>+</span></summary><p>Cost depends on features, design complexity, integrations, and timeline. Share your idea and we will suggest a practical scope based on your budget.</p></details>
+        <details class="reveal"><summary>How long does a project take?<span>+</span></summary><p>A focused landing page may take a few days, while a custom app can take several weeks. You receive a clear timeline before development begins.</p></details>
+        <details class="reveal"><summary>Will the website work on mobile?<span>+</span></summary><p>Yes. Every TECHNOVA website and web app is designed for phones, tablets, laptops, and desktop screens.</p></details>
+        <details class="reveal"><summary>Can you improve my existing website?<span>+</span></summary><p>Yes. We can redesign the interface, improve responsiveness, add new features, fix issues, and optimize the user journey.</p></details>
+        <details class="reveal"><summary>Do you provide support after launch?<span>+</span></summary><p>Yes. We can help with updates, maintenance, monitoring, content changes, and future improvements according to your needs.</p></details>
       </div>
     </section>
 
