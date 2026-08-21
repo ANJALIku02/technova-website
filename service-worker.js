@@ -1,4 +1,4 @@
-const CACHE_NAME = 'technova-v3';
+const CACHE_NAME = 'technova-v4';
 const APP_FILES = [
   './',
   './index.html',
